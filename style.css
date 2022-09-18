@@ -2,30 +2,31 @@
     padding:0;
     margin:0;
     font-family: system-ui;
+    
 }
 
 body{
   background-color: black;
-  
+  visibility: hidden;
 }  
   
 
 #FirstPart{
-    width:100%;
-    height:100vh;
-    position:absolute;
-    background: rgb(54,35,82);
-background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
-       visibility:visible;
-    z-index:4;
+  width:100%;
+  height:100vh;
+  position:absolute;
+  background: rgb(54,35,82);
+  background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
+  visibility:visible;
+  z-index:4;
 }
 
 .allProfil{
   margin-top:10px;
-    display: flex;
-    justify-content: center;
-    opacity:0;
-    animation: ProfilTransition 1s  forwards;
+  display: flex;
+  justify-content: center;
+  opacity:0;
+  animation: ProfilTransition 1s  forwards;
 }
 
 
@@ -83,7 +84,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
   position: relative;
   background: rgb(54,35,82);
 background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
-  animation: text 3s  ;
+  animation: text 3s ;
   
 }
 .text2{
@@ -186,7 +187,7 @@ button{
            animation: ;
            opacity: 0;
    overflow: hidden;
-   background-color:;
+  
    
    
    
@@ -246,6 +247,7 @@ button{
     
   }
   #cardView{
+    opacity: 1;
     animation: ;
     display:flex;
     justify-content: center;
@@ -270,7 +272,7 @@ button{
         cursor: pointer;
         transform-style: preserve-3d;
         transform-origin: center right;
-        transition: transform 1s;
+        transition: transform 0.5s;
       }
       
       .card:hover {
@@ -363,6 +365,8 @@ button{
 
 
   #AllFourthPart{
+    opacity: 0;
+    animation: ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,11 +406,18 @@ button{
     100% { opacity:1;margin-top:-30px; }
     }
 
+    @keyframes AllContactTransition {
+      0%   { opacity:0; }
+      50% {opacity:0.5 ;}
+      100% { opacity:1; }
+      }
+
 
 
 
 
   /* @media screen partis *******************************************/
+
 @media screen and (max-width: 1009px) {
   .text1{
     font-size: 35px; 
@@ -429,25 +440,14 @@ button{
   }
 
   #cardView{
-   
     flex-direction: column;
-    
-  
   }
-      
-      
-      .scene {
+  .scene {
         
-        padding:10px 30px;
-        width: 240px;
-        height: 300px;
-        perspective: 10000px;
-        
+    padding:10px 30px;
+    width: 240px;
+    height: 300px;
+    perspective: 10000px; 
       }
-
-
-  
-
-
 
 }
