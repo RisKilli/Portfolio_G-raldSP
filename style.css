@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family: system-ui;
+    font-family:;
 }
 
 body{
@@ -119,7 +119,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
 
   @keyframes glissement {
     from {
-        margin-left:-80%;
+        margin-left:-100%;
       
     }
   }
