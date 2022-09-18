@@ -83,7 +83,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
   position: relative;
   background: rgb(54,35,82);
 background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
-  animation: text 3s ;
+  animation: text 3s ease-in-out ;
   
 }
 .text2{
