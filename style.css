@@ -273,7 +273,7 @@ button{
         cursor: pointer;
         transform-style: preserve-3d;
         transform-origin: center right;
-        transition: transform 0.15s;
+        transition: transform 0.09s;
       }
       
       .card:hover {
