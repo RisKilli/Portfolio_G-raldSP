@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family:;
+    font-family: system-ui;
 }
 
 body{
@@ -48,7 +48,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
 
 .ImgProfil{
     opacity:0;
-    animation: ProfilTransition 1s ease-in-out 2s forwards;
+    animation: ProfilTransition 1s ease-in-out;
     height: 250px;
     width: auto;
     position: absolute;
