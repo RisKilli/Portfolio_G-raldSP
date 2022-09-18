@@ -1,0 +1,428 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: system-ui;
+}
+
+body{
+  background-color: black;
+}  
+  
+
+#FirstPart{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    background: rgb(54,35,82);
+background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
+       visibility:visible;
+    z-index:4;
+}
+
+.allProfil{
+  margin-top:10px;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+    animation: ProfilTransition 1s ease-in-out 1.5s forwards;
+}
+
+
+
+.Profil{
+    display: flex;
+    justify-content: center;
+    animation-duration: 5s;    
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 10%, white 100%) ;
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    animation:gradient 4s ease-in-out infinite;
+    border:2px solid white;
+    box-shadow:0px 7px 15px 6px white;
+   
+}
+
+
+
+.ImgProfil{
+    opacity:0;
+    animation: ProfilTransition 1s ease-in-out 2s forwards;
+    height: 250px;
+    width: auto;
+    position: absolute;
+    border-radius: 70px;
+}
+
+.container{
+  text-align: center;
+  left: 50%;
+  top: 70%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  
+}
+.container span {
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: #fff;
+  text-shadow:  0 0 7px #fff, 
+           0 0 10px #fff, 
+           0 0 42px black,   
+           0 0 77px black, 
+           0 0 100px black;
+  font-size: 60px;
+  font-weight: 800px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  background: rgb(54,35,82);
+background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
+  animation: text 3s ;
+  
+}
+.text2{
+  font-size: 30px;
+  color: #fff;
+}
+@keyframes text {
+  0%{
+      color: #000;
+      margin-bottom: -40px;
+  }
+  30%{
+      letter-spacing: 10px;
+      margin-bottom: -40px;
+  }
+  85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+  }
+}
+@keyframes ProfilTransition {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+  }
+
+  @keyframes gradient {
+    0%, 100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes glissement {
+    from {
+        margin-left:-80%;
+      
+    }
+  }
+
+
+.FirstPartbtn {
+  padding:20px   ;
+  opacity: 0;
+  animation: ProfilTransition 3s ease-in-out 2s forwards;
+
+}
+
+button{
+  margin:10px;
+  color:white;
+  background-color:#462A6D;
+  cursor:pointer;
+  border:2px solid ;
+  font-size:22px;
+  padding:10px 30px;
+  border-radius:4px;
+}
+
+
+
+
+
+
+/* Deuxieme partis ********************************************/
+
+#SecondPart{
+    z-index:3;
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background-color:#362352;
+    animation:;
+    visibility:visible;
+   
+}
+.AnimationSecondPart{
+  display:flex;
+    justify-content: center;
+     align-items: center;
+  width:100%;
+  height:100vh;
+
+}
+#AnimationSecondPart{
+  opacity:0;
+  animation:;
+}
+
+.AllSecondPart{
+  color: white;
+ }
+
+#TypingAboutMe{
+  font-size:40px;
+  color: black;
+  -webkit-text-stroke: 2px #693aa7;
+  text-shadow: 0px 0px 6px #693aa7;
+           animation: ;
+           opacity: 0;
+   overflow: hidden;
+   background-color:;
+   
+   
+   
+}
+
+.AllSecondPart p{
+  font-size:20px;
+  color: #fff;
+}
+
+.AllSecondPart strong {
+  color:#693aa7;
+}
+ .AllSecondPart div {
+   padding-top:20px;
+ }
+
+ .AllSecondPart button {
+  margin:50px 0 0 0;
+}
+
+@keyframes SecondPartAnim {
+  0%   { margin-top: -20px;opacity:0; }
+  100% { margin-top: 0;opacity:1; }
+  }
+
+
+@keyframes typing {
+  0%{ width:0 ;opacity: 0.5;}
+  100% { width: 100% ;opacity: 1;}
+}
+@keyframes glissement1 {
+    from {
+        margin-top:-200%;
+      
+    }
+  }
+ 
+  
+
+/* Troisième partis ********************************************/
+
+#ThirdPart{
+    z-index:2;
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background-color:black;
+    animation:;
+    visibility:hidden;
+  
+  }
+  .ThirdPartbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .cardView{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+      
+      
+      .scene {
+        padding:100px 30px;
+        width: 300px;
+        height: 360px;
+        perspective: 10000px;
+        
+      }
+      
+      .card {
+        
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+        transition: transform 1s;
+      }
+      
+      .card:hover {
+        transform: translateX(-100%) rotateY(-180deg);
+      }
+      
+      .card__face {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: black;
+        backface-visibility: hidden;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 20px;
+      }
+
+      .card__face p {
+        padding: 10px;
+        margin-top: 10px;
+        
+      }
+      
+      .front {
+        animation:gradient 4s ease-in-out infinite;
+  box-shadow: 2px 5px 16px 0px gray, 0px 0px 9px 0px gray;
+        border-radius:10px;
+        background: #462A6D;
+        border:solid 2px white;
+        
+      }
+      
+      .back {
+        animation:gradient 4s ease-in-out infinite;
+  box-shadow: 2px 5px 16px 0px gray, 0px 0px 9px 0px gray;
+        border-radius:10px;
+        background: #462A6D;
+        transform: rotateY(180deg);
+        border:solid 2px white;
+      }
+
+  @keyframes glissement2 {
+    from {
+        margin-top:200%;
+      
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  .loading {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: 1.25rem solid gray;
+      border-top-color: black;
+      animation: spin 1.5s  infinite ease-in-out;
+  }
+  
+  
+
+  
+  
+    /* mon, premier projet ,pourquoi pas faire en sorte que je puisse le modifier avec du SQL */
+    
+
+/* Quatrième partis ********************************************/
+
+#FourthPart{
+    z-index:1;
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background-color:black;
+    animation:;
+    visibility:hidden;
+  
+  }
+
+
+  #AllFourthPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:100px;
+    color: #fff;
+    text-shadow:  0 0 7px #fff, 
+             0 0 10px #fff, 
+             0 0 42px black,   
+             0 0 77px black, 
+             0 0 100px black;
+    font-size: 40px;
+   
+  }
+
+  .AllFourthPart p {
+    padding:15px;
+  }
+  #Contact{
+    margin-top:40px;
+    visibility:hidden;
+  }
+  #hiddenContact{
+    opacity:0;
+    animation:;
+  }
+  
+  #hiddenContact a{ 
+    padding: 20px;
+    text-decoration : none;
+  }
+  
+
+
+  @keyframes ContactTransition {
+    0%   { opacity:0;margin-top:0px; }
+    100% { opacity:1;margin-top:-30px; }
+    }
+
+
+
+
+
+  /* @media screen partis *******************************************/
+@media screen and (max-width: 1009px) {
+  .text1{
+    font-size: 35px; 
+  }
+  .text2{
+    font-size: 16px;
+  }
+  .AllSecondPart p {
+    padding:5px;
+    font-size: 16px;
+  }
+  .card__face {
+
+    font-size: 16px;
+  }
+  #AllFourthPart{
+   
+    font-size: 30px;
+   
+  }
+}
