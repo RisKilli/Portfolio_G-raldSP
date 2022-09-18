@@ -5,18 +5,14 @@ function FirstPart() {
     var Second=document.getElementById("FirstPart");
         onclick=Second.style.visibility="hidden";
 
-        setTimeout(function() { 
-            var Second=document.getElementById("TypingAboutMe");
-            onclick=Second.style.animation="typing 4.5s 2s forwards";
+      
+    var Second=document.getElementById("TypingAboutMe");
+        onclick=Second.style.animation="typing 4.5s 2s forwards";
                                     
-        },500);
-
-
-    setTimeout(function() { 
-        var Second=document.getElementById("AnimationSecondPart");
+    var Second=document.getElementById("AnimationSecondPart");
         onclick=Second.style.animation="SecondPartAnim 1s ease-in-out 2s forwards";
                                 
-    },1000);
+    
     
   }
 
@@ -27,6 +23,9 @@ function FirstPart() {
 
     var Second=document.getElementById("SecondPart");
         onclick=Second.style.visibility="hidden";
+
+    var Second=document.getElementById("cardView");
+        onclick=Second.style.animation="SecondPartAnim 3s forwards";
    
   }
 

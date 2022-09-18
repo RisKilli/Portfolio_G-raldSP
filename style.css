@@ -245,7 +245,8 @@ button{
     align-items: center;
     
   }
-  .cardView{
+  #cardView{
+    animation: ;
     display:flex;
     justify-content: center;
     align-items: center;
