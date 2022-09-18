@@ -43,8 +43,14 @@ function FirstPart() {
     var Contact=document.getElementById("Contact");
     onclick=Contact.style.visibility="visible"
 
-    var Contact=document.getElementById("AllFourthPart");
-    onclick=Contact.style.animation="AllContactTransition 3s forwards"
+    var AllFourthPart=document.getElementById("AllFourthPart");
+    onclick=AllFourthPart.style.animation="AllContactTransition 10s forwards";
+
+    var TypingJunior=document.getElementById("TypingJunior")
+    onclick=TypingJunior.style.animation="typing 5s forwards "
+
+    var SlideJunior=document.getElementById("SlideJunior")
+    onclick=SlideJunior.style.animation="SlideJunior 3s  ease-in-out 2s forwards";
 
 
    
@@ -53,6 +59,8 @@ function FirstPart() {
 
 
   function ContactMe() {
+
+
     var ContactMe=document.getElementById("hiddenContact")
     var Contact=document.getElementById("Contact")
     
