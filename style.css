@@ -429,7 +429,7 @@ button{
 
   .cardView{
    
-    display:block;
+    flex-direction: column;
     
   
   }
@@ -437,7 +437,7 @@ button{
       
       .scene {
         
-        padding:5px 3%;
+        padding:10px 30px;
         width: 240px;
         height: 300px;
         perspective: 10000px;
