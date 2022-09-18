@@ -112,7 +112,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
 @keyframes ProfilTransition {
   0%   { opacity:0; }
   50% { opacity:0.5; }
-  100% { opacity:0.5; }
+  100% { opacity:1; }
   }
 
   @keyframes gradient {
