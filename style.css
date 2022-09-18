@@ -25,7 +25,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
     display: flex;
     justify-content: center;
     opacity:0;
-    animation: ProfilTransition 1s ease-in-out 1.5s forwards;
+    animation: ProfilTransition 1s  forwards;
 }
 
 
@@ -83,7 +83,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
   position: relative;
   background: rgb(54,35,82);
 background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, rgba(54,35,82,1) 100%);
-  animation: text 3s ease-in-out ;
+  animation: text 3s  ;
   
 }
 .text2{
@@ -129,7 +129,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
 .FirstPartbtn {
   padding:20px ;
   opacity: 0;
-  animation: ProfilTransition 3s ease-in-out 2s forwards;
+  animation: ProfilTransition 10s  forwards;
 
 }
 
