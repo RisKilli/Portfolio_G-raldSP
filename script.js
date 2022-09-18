@@ -1,3 +1,6 @@
+
+
+
 function FirstPart() {
     var First=document.getElementById("SecondPart");
         onclick=First.style.animation="glissement 1s ease-in-out";
@@ -25,7 +28,7 @@ function FirstPart() {
         onclick=Second.style.visibility="hidden";
 
     var Second=document.getElementById("cardView");
-        onclick=Second.style.animation="SecondPartAnim 3s forwards";
+        onclick=Second.style.animation="SecondPartAnim 5s forwards";
    
   }
 
@@ -39,6 +42,9 @@ function FirstPart() {
 
     var Contact=document.getElementById("Contact");
     onclick=Contact.style.visibility="visible"
+
+    var Contact=document.getElementById("AllFourthPart");
+    onclick=Contact.style.animation="AllContactTransition 3s forwards"
 
 
    
