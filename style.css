@@ -426,4 +426,27 @@ button{
     font-size: 30px;
    
   }
+
+  .cardView{
+   
+    display:block;
+    
+  
+  }
+      
+      
+      .scene {
+        
+        padding:5px 3%;
+        width: 240px;
+        height: 300px;
+        perspective: 10000px;
+        
+      }
+
+
+  
+
+
+
 }
