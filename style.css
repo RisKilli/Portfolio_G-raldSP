@@ -259,7 +259,7 @@ button{
         padding:100px 30px;
         width: 300px;
         height: 360px;
-        perspective: 10000px;
+        perspective: 400px;
         
       }
       
@@ -271,7 +271,7 @@ button{
         cursor: pointer;
         transform-style: preserve-3d;
         transform-origin: center right;
-        transition: transform 0.09s;
+        transition: transform 1.9s;
       }
       
       .card:hover {
