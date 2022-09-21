@@ -131,7 +131,7 @@ background: linear-gradient(90deg, rgba(54,35,82,1) 0%, rgba(105,58,167,1) 50%, 
 .FirstPartbtn {
   padding:20px ;
   opacity: 0;
-  animation: ProfilTransition 10s  forwards;
+  animation: ProfilTransition 7s  forwards;
   animation-delay : 3s;
 
 }
@@ -271,7 +271,7 @@ button{
         cursor: pointer;
         transform-style: preserve-3d;
         transform-origin: center right;
-        transition: transform 1.9s;
+        transition: transform 1.5s;
       }
       
       .card:hover {
