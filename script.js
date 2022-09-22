@@ -27,8 +27,13 @@ function FirstPart() {
     var Second=document.getElementById("SecondPart");
         onclick=Second.style.visibility="hidden";
 
-    var Second=document.getElementById("cardView");
-        onclick=Second.style.animation="SecondPartAnim 5s forwards";
+    var Second1=document.getElementById("cardView");
+        onclick=Second1.style.animation="SecondPartAnim1 5s forwards";
+
+    var Second1=document.getElementById("ThirdPartbtn");
+        onclick=Second1.style.animation="SecondPartAnim1 5s forwards";
+
+       
    
   }
 

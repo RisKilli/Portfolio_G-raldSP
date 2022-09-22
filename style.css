@@ -239,10 +239,12 @@ button{
     visibility:hidden;
   
   }
-  .ThirdPartbtn{
+  #ThirdPartbtn{
     display:flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    animation: ;
     
   }
   #cardView{
@@ -274,9 +276,7 @@ button{
         transition: transform 0.7s linear;
       }
       
-      .card:hover {
-        transform: translateX(-100%) rotateY(-180deg);
-      }
+     
       
       .card__face {
         display:flex;
@@ -322,6 +322,13 @@ button{
       
     }
   }
+
+  @keyframes SecondPartAnim1 {
+    0%   { margin-top: -20px;opacity:0; }
+   
+    100% { margin-top: 0;opacity:1; }
+    }
+
   @keyframes spin {
     0% {
       transform: rotate(0deg);
